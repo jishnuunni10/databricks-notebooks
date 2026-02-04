@@ -68,7 +68,7 @@ class TUBot:
             True if successful, False otherwise
         """
         logger.info(f"Updating bot status to: {status}")
-        message = f"🤖 Bot Status Update: {status}"
+        message = f"Bot Status Update: {status}"
         result = self.send_message(message)
         return result is not None
     
