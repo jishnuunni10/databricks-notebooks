@@ -10,13 +10,11 @@ This repository contains Databricks notebooks exported from the workspace for ve
    - Purpose: Update and "touch" account records via REST API
    - Functionality: Updates account timestamps and metadata
    - Use Case: Account activity tracking and audit trails
-   - [Detailed Documentation](https://github.com/jishnuunni10/databricks-notebooks/blob/main/Touch_update_account.py)
 
 2. **TUbot_upd.py**
    - Purpose: Telegram bot for sending status updates and notifications
    - Functionality: Automated messaging and monitoring via Telegram
    - Use Case: Real-time pipeline monitoring and alerting
-   - [Detailed Documentation](https://github.com/jishnuunni10/databricks-notebooks/blob/main/TUbot_upd.py)
 
 ## Getting Started
 
@@ -52,11 +50,7 @@ This repository contains Databricks notebooks exported from the workspace for ve
 #### For TUbot Update:
 - Obtain Telegram Bot token from [@BotFather](https://t.me/botfather)
 - Get your Chat ID
-- Store credentials securely using Databricks Secrets:
-  ```python
-  BOT_TOKEN = dbutils.secrets.get(scope="telegram-bot", key="bot-token")
-  CHAT_ID = dbutils.secrets.get(scope="telegram-bot", key="chat-id")
-  ```
+- Store credentials securely using Databricks Secrets
 
 ## Usage Examples
 
@@ -79,12 +73,6 @@ bot.send_message("Pipeline started!")
 # Update status
 bot.update_bot_status("Processing data...")
 ```
-
-## Documentation
-
-Comprehensive documentation for each notebook is available in the `.md` directory:
-- `Touch_update_account.md` - Complete guide with examples, API reference, and troubleshooting
-- `TUbot_upd.md` - Detailed documentation covering setup, usage, and best practices
 
 ## Features
 
@@ -118,20 +106,6 @@ Comprehensive documentation for each notebook is available in the `.md` director
    - Set up alerts for failures
    - Monitor API rate limits
 
-4. **Version Control**
-   - Commit changes with descriptive messages
-   - Use branches for experimental features
-   - Tag releases for production deployments
-
-## Integration Points
-
-These notebooks can be integrated with:
-- Databricks Jobs for scheduled execution
-- Delta Lake for data operations
-- MLflow for ML pipeline monitoring
-- Azure Event Hubs / AWS Kinesis for streaming
-- Apache Airflow for orchestration
-
 ## Troubleshooting
 
 ### Common Issues
@@ -145,16 +119,6 @@ These notebooks can be integrated with:
 **Issue**: Rate limiting errors
 - **Solution**: Implement delays between requests
 
-For detailed troubleshooting, refer to the individual notebook documentation files.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## Repository Structure
 
 ```
@@ -162,14 +126,12 @@ databricks-notebooks/
 ├── README.md                      # This file
 ├── Touch update account.py        # Account update notebook
 ├── Touch_update_account.py        # Account update notebook (no spaces)
-├── TUbot_upd.py                  # Telegram bot notebook
-└── .gitignore                    # Git ignore patterns
+└── TUbot_upd.py                  # Telegram bot notebook
 ```
 
 ## Workspace Information
 
 - **Original Location**: `/Workspace/Users/chakkappazhamseries1@gmail.com`
-- **Databricks Instance**: `dbc-954e6b63-50c7.cloud.databricks.com`
 - **Export Date**: February 4, 2026
 
 ## Dependencies
@@ -182,10 +144,6 @@ databricks-notebooks/
 - `logging` - Structured logging
 - `typing` - Type hints
 
-### Databricks Utilities
-- `dbutils.secrets` - Secure credential management
-- `dbutils.notebook` - Notebook operations
-
 ## Version History
 
 - **v1.0.0** (2026-02-04): Initial repository setup
@@ -193,16 +151,11 @@ databricks-notebooks/
   - Added TUbot Update notebook
   - Created comprehensive documentation
 
-## License
-
-This project is maintained for internal use. Please refer to your organization's policies regarding code usage and distribution.
-
 ## Support
 
 For questions, issues, or feature requests:
 - Create an issue in this repository
 - Contact the data engineering team
-- Refer to detailed documentation in the `.md` files
 
 ## Related Resources
 
@@ -210,14 +163,7 @@ For questions, issues, or feature requests:
 - [Telegram Bot API](https://core.telegram.org/bots/api)
 - [Python Requests Library](https://requests.readthedocs.io/)
 
-## Acknowledgments
-
-- Databricks community for platform support
-- Telegram for Bot API
-- Contributors to the open-source libraries used
-
 ---
 
 **Last Updated**: February 4, 2026  
-**Repository**: https://github.com/jishnuunni10/databricks-notebooks  
-**Maintained By**: Data Engineering Team
+**Repository**: https://github.com/jishnuunni10/databricks-notebooks
